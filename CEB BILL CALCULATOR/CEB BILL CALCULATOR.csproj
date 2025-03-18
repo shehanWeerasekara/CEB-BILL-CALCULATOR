@@ -52,10 +52,73 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form1_dom_billrate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1_dom_billrate.Designer.cs">
+      <DependentUpon>Form1_dom_billrate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1_dom_cal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1_dom_cal.Designer.cs">
+      <DependentUpon>Form1_dom_cal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1_gen_cat_GP_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1_gen_cat_GP_1.Designer.cs">
+      <DependentUpon>Form1_gen_cat_GP_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1_gov_cat_GV_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1_gov_cat_GV_1.Designer.cs">
+      <DependentUpon>Form1_gov_cat_GV_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1_hot_cat_h_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1_hot_cat_h_1.Designer.cs">
+      <DependentUpon>Form1_hot_cat_h_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1_ind_cat_i_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1_ind_cat_i_1.Designer.cs">
+      <DependentUpon>Form1_ind_cat_i_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1_rel_cat_R_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1_rel_cat_R_1.Designer.cs">
+      <DependentUpon>Form1_rel_cat_R_1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1_dom_billrate.resx">
+      <DependentUpon>Form1_dom_billrate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1_dom_cal.resx">
+      <DependentUpon>Form1_dom_cal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1_gen_cat_GP_1.resx">
+      <DependentUpon>Form1_gen_cat_GP_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1_gov_cat_GV_1.resx">
+      <DependentUpon>Form1_gov_cat_GV_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1_hot_cat_h_1.resx">
+      <DependentUpon>Form1_hot_cat_h_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1_ind_cat_i_1.resx">
+      <DependentUpon>Form1_ind_cat_i_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1_rel_cat_R_1.resx">
+      <DependentUpon>Form1_rel_cat_R_1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
