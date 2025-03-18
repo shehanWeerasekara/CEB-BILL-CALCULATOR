@@ -41,19 +41,19 @@
             this.pnl_result = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label28 = new System.Windows.Forms.Label();
+            this.lbl_3 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
+            this.lbl_2 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
+            this.lbl_1 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.tbl_billrate = new System.Windows.Forms.TableLayoutPanel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lbl_t_3 = new System.Windows.Forms.Label();
+            this.lbl_t_2 = new System.Windows.Forms.Label();
+            this.lbl_t_1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -144,6 +144,7 @@
             this.tb_units.Name = "tb_units";
             this.tb_units.Size = new System.Drawing.Size(213, 22);
             this.tb_units.TabIndex = 0;
+            this.tb_units.Text = "0";
             this.tb_units.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel1
@@ -166,6 +167,7 @@
             this.btn_cal.TabIndex = 0;
             this.btn_cal.Text = "CALCULATE";
             this.btn_cal.UseVisualStyleBackColor = true;
+            this.btn_cal.Click += new System.EventHandler(this.btn_cal_Click);
             // 
             // label4
             // 
@@ -180,6 +182,7 @@
             // 
             // pnl_result
             // 
+            this.pnl_result.BackColor = System.Drawing.Color.Cornsilk;
             this.pnl_result.Controls.Add(this.panel3);
             this.pnl_result.Controls.Add(this.tbl_billrate);
             this.pnl_result.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -187,6 +190,7 @@
             this.pnl_result.Name = "pnl_result";
             this.pnl_result.Size = new System.Drawing.Size(800, 289);
             this.pnl_result.TabIndex = 5;
+            this.pnl_result.Visible = false;
             // 
             // panel3
             // 
@@ -205,13 +209,13 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.75F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.75F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Controls.Add(this.label28, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_3, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.label27, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label26, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label25, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_2, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.label24, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label23, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label22, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_1, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label21, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label20, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -224,16 +228,16 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 189);
             this.tableLayoutPanel1.TabIndex = 13;
             // 
-            // label28
+            // lbl_3
             // 
-            this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(535, 126);
-            this.label28.Name = "label28";
-            this.label28.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.label28.Size = new System.Drawing.Size(262, 63);
-            this.label28.TabIndex = 23;
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_3.Location = new System.Drawing.Point(535, 126);
+            this.lbl_3.Name = "lbl_3";
+            this.lbl_3.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.lbl_3.Size = new System.Drawing.Size(262, 63);
+            this.lbl_3.TabIndex = 23;
+            this.lbl_3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label27
             // 
@@ -258,16 +262,16 @@
             this.label26.Text = "Total Charge (Rs)";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label25
+            // lbl_2
             // 
-            this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(535, 63);
-            this.label25.Name = "label25";
-            this.label25.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.label25.Size = new System.Drawing.Size(262, 63);
-            this.label25.TabIndex = 20;
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_2.Location = new System.Drawing.Point(535, 63);
+            this.lbl_2.Name = "lbl_2";
+            this.lbl_2.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.lbl_2.Size = new System.Drawing.Size(262, 63);
+            this.lbl_2.TabIndex = 20;
+            this.lbl_2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label24
             // 
@@ -292,16 +296,16 @@
             this.label23.Text = "Fixed Charges (Rs)";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label22
+            // lbl_1
             // 
-            this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(535, 0);
-            this.label22.Name = "label22";
-            this.label22.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.label22.Size = new System.Drawing.Size(262, 63);
-            this.label22.TabIndex = 17;
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_1.Location = new System.Drawing.Point(535, 0);
+            this.lbl_1.Name = "lbl_1";
+            this.lbl_1.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.lbl_1.Size = new System.Drawing.Size(262, 63);
+            this.lbl_1.TabIndex = 17;
+            this.lbl_1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label21
             // 
@@ -333,9 +337,9 @@
             this.tbl_billrate.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tbl_billrate.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tbl_billrate.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tbl_billrate.Controls.Add(this.label11, 2, 1);
-            this.tbl_billrate.Controls.Add(this.label10, 1, 1);
-            this.tbl_billrate.Controls.Add(this.label9, 0, 1);
+            this.tbl_billrate.Controls.Add(this.lbl_t_3, 2, 1);
+            this.tbl_billrate.Controls.Add(this.lbl_t_2, 1, 1);
+            this.tbl_billrate.Controls.Add(this.lbl_t_1, 0, 1);
             this.tbl_billrate.Controls.Add(this.label7, 2, 0);
             this.tbl_billrate.Controls.Add(this.label6, 1, 0);
             this.tbl_billrate.Controls.Add(this.label5, 0, 0);
@@ -348,36 +352,35 @@
             this.tbl_billrate.Size = new System.Drawing.Size(800, 100);
             this.tbl_billrate.TabIndex = 3;
             // 
-            // label11
+            // lbl_t_3
             // 
-            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(536, 57);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(260, 42);
-            this.label11.TabIndex = 6;
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_t_3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_t_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_t_3.Location = new System.Drawing.Point(536, 57);
+            this.lbl_t_3.Name = "lbl_t_3";
+            this.lbl_t_3.Size = new System.Drawing.Size(260, 42);
+            this.lbl_t_3.TabIndex = 6;
+            this.lbl_t_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label10
+            // lbl_t_2
             // 
-            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(270, 57);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(259, 42);
-            this.label10.TabIndex = 5;
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_t_2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_t_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_t_2.Location = new System.Drawing.Point(270, 57);
+            this.lbl_t_2.Name = "lbl_t_2";
+            this.lbl_t_2.Size = new System.Drawing.Size(259, 42);
+            this.lbl_t_2.TabIndex = 5;
+            this.lbl_t_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label9
+            // lbl_t_1
             // 
-            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(4, 57);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(259, 42);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "< 301";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_t_1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_t_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_t_1.Location = new System.Drawing.Point(4, 57);
+            this.lbl_t_1.Name = "lbl_t_1";
+            this.lbl_t_1.Size = new System.Drawing.Size(259, 42);
+            this.lbl_t_1.TabIndex = 4;
+            this.lbl_t_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
@@ -417,6 +420,7 @@
             // 
             // Form1_gov_cat_GV_1
             // 
+            this.AcceptButton = this.btn_cal;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
@@ -425,6 +429,7 @@
             this.Controls.Add(this.pnl_title);
             this.Name = "Form1_gov_cat_GV_1";
             this.Text = "Form1_gov_cat_GV_1";
+            this.Load += new System.EventHandler(this.Form1_gov_cat_GV_1_Load);
             this.pnl_title.ResumeLayout(false);
             this.pnl_input.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -455,19 +460,19 @@
         private System.Windows.Forms.Panel pnl_result;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label lbl_3;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label lbl_2;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label lbl_1;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TableLayoutPanel tbl_billrate;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lbl_t_3;
+        private System.Windows.Forms.Label lbl_t_2;
+        private System.Windows.Forms.Label lbl_t_1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;

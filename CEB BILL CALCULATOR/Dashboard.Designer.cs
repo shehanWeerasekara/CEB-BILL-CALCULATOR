@@ -285,6 +285,7 @@
             // 
             this.pnl_right.AutoScroll = true;
             this.pnl_right.BackColor = System.Drawing.Color.Cornsilk;
+            this.pnl_right.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pnl_right.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_right.Location = new System.Drawing.Point(227, 0);
             this.pnl_right.Name = "pnl_right";
@@ -296,9 +297,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1088, 582);
             this.Controls.Add(this.pnl_right);
             this.Controls.Add(this.pnl_left);
+            this.MinimumSize = new System.Drawing.Size(1106, 629);
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CEB BILL CALCULATOR";
