@@ -305,6 +305,7 @@
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CEB BILL CALCULATOR";
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.pnl_left.ResumeLayout(false);
             this.pnl_buttons.ResumeLayout(false);
             this.pnl_submenu.ResumeLayout(false);

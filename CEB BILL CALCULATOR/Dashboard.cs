@@ -127,5 +127,10 @@ namespace CEB_BILL_CALCULATOR
         {
             openchidlForm(new Form1_dom_billrate());
         }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
